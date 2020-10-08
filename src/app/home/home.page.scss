@@ -1,4 +1,14 @@
 ion-card{
   width:auto;
-  height:10vh;
+  height:16.5vh;
+}
+
+ion-content {
+  --background: url(../../assets/SpaceBackground.jpg) no-repeat center/cover fixed;
+}
+
+ion-header{
+  height:auto;
+  font-size: xx-large;
+  color: #ffffff;
 }

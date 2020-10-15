@@ -2,12 +2,16 @@
   <ion-header>
     <ion-toolbar>
       <ion-title>Jorden</ion-title>
+      <ion-back-button slot="start"></ion-back-button>
     </ion-toolbar>
   </ion-header>
 
-  <ion-content>
-    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
-      <ion-refresher-content></ion-refresher-content>
-    </ion-refresher>
-  </ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-card>
+        <ion-img src="src\assets\planetbilder\Jorden.png"></ion-img>
+        <ion-text>Infoga information här tack!</ion-text>
+      </ion-card>
+    </ion-row>
+  </ion-grid>
 </ion-content>

@@ -3,10 +3,23 @@ ion-content {
 }
 
 ion-img{
-  size: 10vh;
+  width: auto;
+  height: auto;
 }
 
-.logoPic{
-  width: 20vh;
-  height: 20vh;
+.border{
+  border-style: solid;
+  border-color: white;
+}
+
+ion-card{
+  border-style: solid;
+  min-height: 30vh;
+  border-color:#111111;
+  font-size: large;
+  font-style: oblique;
+}
+
+ion-text{
+  color: #ffffff;
 }

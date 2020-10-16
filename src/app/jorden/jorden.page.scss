@@ -1,0 +1,25 @@
+ion-content {
+  --background: url(../../assets/bakgrundsbilder/jorden.jpg) no-repeat center/cover fixed;
+}
+
+ion-img{
+  width: auto;
+  height: auto;
+}
+
+.border{
+  border-style: solid;
+  border-color: white;
+}
+
+ion-card{
+  border-style: solid;
+  min-height: 30vh;
+  border-color:#111111;
+  font-size: large;
+  font-style: oblique;
+}
+
+ion-text{
+  color: #ffffff;
+}

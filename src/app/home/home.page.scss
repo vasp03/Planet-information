@@ -1,0 +1,17 @@
+ion-card{
+  width:auto;
+  height:auto;
+  border-style: solid;
+  border-color: #000000;
+  --background: url(../../assets/bakgrundsbilder/minispace_bred.png) no-repeat center/cover fixed;
+}
+
+ion-content {
+  --background: url(../../assets/bakgrundsbilder/månen.jpg) no-repeat center/cover fixed;
+  background-color: #ffffff;
+}
+
+ion-header{
+  height:auto;
+  color: #ffffff;
+}

@@ -21,9 +21,9 @@
           <ion-text>Infoga information här tack!</ion-text>
         </ion-card>
       </ion-col>
-      <ion-col>
+      <ion-col *ngFor="let name of names">
         <ion-card>
-          <ion-text>Infoga information här tack!</ion-text>
+          {{name}}
         </ion-card>
       </ion-col>
     </ion-row>

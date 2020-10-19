@@ -3,7 +3,7 @@ ion-card{
   height:auto;
   border-style: solid;
   border-color: #000000;
-  --background: url(../../assets/bakgrundsbilder/minispace_bred.png) no-repeat center/cover fixed;
+  background-color: #222222;
 }
 
 ion-content {
@@ -14,4 +14,9 @@ ion-content {
 ion-header{
   height:auto;
   color: #ffffff;
+}
+
+ion-header{
+  border-style: solid;
+  border-color: #000000;
 }

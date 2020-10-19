@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AngularFireDatabase} from '@angular/fire/database';
 
 @Component({
   selector: 'app-jorden',
@@ -7,10 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JordenPage implements OnInit {
 
-  data: any;
+  items: any ;
 
-  constructor() {}
+  constructor(public afd : AngularFireDatabase) {
+    this.getSomeText();
+  }
 
   ngOnInit() {
+  }
+
+  getSomeText() {
+    this.afd.list('PlanetFakta/Jorden').valueChanges().subscribe(
+      data => {
+        console.log(data)
+        this.items = data
+      }
+    )
   }
 }

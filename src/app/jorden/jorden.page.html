@@ -21,9 +21,11 @@
           <ion-text>Infoga information här tack!</ion-text>
         </ion-card>
       </ion-col>
-      <ion-col *ngFor="let name of names">
+      <ion-col>
         <ion-card>
-          {{name}}
+          <ion-text *ngFor="let planet of PlanetFakta | async">
+            {{planet.name}}
+          </ion-text>
         </ion-card>
       </ion-col>
     </ion-row>

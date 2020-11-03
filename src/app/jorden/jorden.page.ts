@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {AngularFireDatabase} from '@angular/fire/database';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-jorden',
@@ -7,22 +8,12 @@ import {AngularFireDatabase} from '@angular/fire/database';
   styleUrls: ['./jorden.page.scss'],
 })
 export class JordenPage implements OnInit {
+  PlanetFakta: Observable<any[]>;
 
-  items: any ;
-
-  constructor(public afd : AngularFireDatabase) {
-    this.getSomeText();
+  constructor(firestore: AngularFirestore) {
+    this.PlanetFakta = firestore.collection("PlanetFakta").valueChanges();
   }
 
   ngOnInit() {
-  }
-
-  getSomeText() {
-    this.afd.list('PlanetFakta/Jorden').valueChanges().subscribe(
-      data => {
-        console.log(data)
-        this.items = data
-      }
-    )
   }
 }

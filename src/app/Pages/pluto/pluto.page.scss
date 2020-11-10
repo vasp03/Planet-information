@@ -1,0 +1,38 @@
+ion-content {
+  --background: url(../../../assets/bakgrundsbilder/pluto.jpg) no-repeat center/cover fixed;
+}
+
+ion-img{
+  width: auto;
+  height: auto;
+}
+
+.border{
+  border-style: solid;
+  border-color: white;
+}
+
+ion-card{
+  border-style: solid;
+  min-height: 20vh;
+  border-color:#111111;
+  font-size: large;
+  font-style: oblique;
+}
+
+ion-text{
+  color: #ffffff;
+}
+
+ion-con{
+  width: 70vh;
+}
+
+ion-row{
+  height: auto;
+}
+
+ion-header{
+  border-style: solid;
+  border-color: #000000;
+}
